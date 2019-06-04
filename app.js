@@ -83,3 +83,30 @@ function unRetweet(randomlyChoosenTweet){
 	}
 	});
 }
+
+// To add a set of tweets to the database:
+// function addTweetsToDb(){
+// 	tweetIds = ['fillInYourTweetIds','fillInYourTweetIds'];
+// 	tweetIds.forEach(function(data){
+// 		Toretweet.create({}, (err, toretweet)=>{
+// 			return new Promise( function(resolve) {
+// 				toretweet.tweetid = data;
+// 				toretweet.date = new Date();
+// 				toretweet.url = 'https://twitter.com/yourtwitterusername/status/' + data;
+// 				toretweet.about = '';
+// 				toretweet.save()
+// 					.then(item => {
+// 					 console.log("added");
+// 					 })
+// 					.then(function(){
+// 					resolve('worked out');
+// 					})
+// 					.catch(err => {
+// 						 if(err)
+// 					console.log(err);
+// 					});
+// 			});
+// 		});			 
+// 	});
+// }
+// addTweetsToDb();
